@@ -18,3 +18,13 @@ const playAgainButton = document.querySelector(".play-again");
 // Starting word
 const word = "magnolia";
 
+const placeholder = function (word) {
+  const placeholderLetters = [];
+  for (const letter of word) {
+    console.log(letter);
+    placeholderLetters.push("●");
+  }
+  wordInProgress.innerText = placeholderLetters.join("");
+};
+
+placeholder(word);
