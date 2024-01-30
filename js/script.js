@@ -28,3 +28,10 @@ const placeholder = function (word) {
 };
 
 placeholder(word);
+
+guessButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  const guess = letterInput.value;
+  console.log(guess);
+  letterInput.value = "";
+});
